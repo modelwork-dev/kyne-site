@@ -27,8 +27,8 @@ Output in `dist/` (adatto a Cloudflare Pages, Netlify, S3+CDN, ecc.).
 
 ## Deploy: GitHub + Cloudflare Pages
 
-1. **Repository Git** — Da questa cartella: `git init`, `git add -A`, `git commit`, branch `main` (`git branch -M main`). Collega GitHub (`git remote add origin …`, `git push -u origin main`) oppure `gh repo create kyne-site --public --source=. --remote=origin --push` (nome repo adattabile).
-2. **Cloudflare** — Dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git** → autorizza GitHub, scegli repo e branch **`main`**.
+1. **Repository Git** — Repo: **https://github.com/modelwork-ai/kyne-site** (branch `main`). Per clonare: `git clone …`; per sviluppo locale da zero si può ancora usare `git init` + `remote add` + `push` su un altro repo se preferisci.
+2. **Cloudflare** — Dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git** → autorizza GitHub, scegli repository **`modelwork-ai/kyne-site`** e branch **`main`**.
 3. **Impostazioni build**
 
 | Campo | Valore |

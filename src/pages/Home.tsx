@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 import Seo from "../components/Seo";
 import { site } from "../content/site";
@@ -54,7 +53,9 @@ export default function Home() {
           ) : (
             <>
               <h2 className="text-2xl font-bold text-surface-900">{block.title}</h2>
-              <p className="mt-3 max-w-2xl text-surface-600">{block.body}</p>
+              {block.body.trim() ? (
+                <p className="mt-3 max-w-2xl text-surface-600">{block.body}</p>
+              ) : null}
               <p className="mt-4">
                 <a
                   href={`mailto:${block.email}`}
@@ -69,11 +70,6 @@ export default function Home() {
         </section>
       ))}
 
-      <section className="border-t border-surface-200 bg-surface-50 px-5 py-10 text-center text-sm text-surface-600">
-        <Link to="/privacy-policy" className="font-medium text-accent-600 hover:text-accent-500">
-          Privacy Policy
-        </Link>
-      </section>
     </div>
   );
 }

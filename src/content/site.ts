@@ -24,7 +24,7 @@ export const site = {
   footer: {
     note: "© {year} Kyne. Tutti i diritti riservati.",
     productAttribution: {
-      beforeLink: "ZenBake è un prodotto ",
+      beforeLink: "Kyne è un prodotto ",
       companyLabel: "Modelwork.ai",
       companyUrl: "https://modelwork.ai",
     } as const,
@@ -63,7 +63,7 @@ export const site = {
       {
         id: "contatti",
         title: "Contatti",
-        body: "Kyne è in fase di prodotto: se gestite assistenza multicanale e volete raccontarci come lavorate oggi, scriveteci. Ci aiuta a costruire nel modo giusto.",
+        body: "",
         email: "hello@kyne.it",
       },
     ],

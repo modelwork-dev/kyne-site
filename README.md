@@ -27,8 +27,8 @@ Output in `dist/` (adatto a Cloudflare Pages, Netlify, S3+CDN, ecc.).
 
 ## Deploy: GitHub + Cloudflare Pages
 
-1. **Repository Git** — Repo: **https://github.com/modelwork-ai/kyne-site** (branch `main`). Per clonare: `git clone …`; per sviluppo locale da zero si può ancora usare `git init` + `remote add` + `push` su un altro repo se preferisci.
-2. **Cloudflare** — Dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git** → autorizza GitHub, scegli repository **`modelwork-ai/kyne-site`** e branch **`main`**.
+1. **Repository Git** — Repo: **https://github.com/modelwork-dev/kyne-site** (branch `main`). Per clonare: `git clone …`; per sviluppo locale da zero si può ancora usare `git init` + `remote add` + `push` su un altro repo se preferisci.
+2. **Cloudflare** — Dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git** → autorizza GitHub, scegli repository **`modelwork-dev/kyne-site`** e branch **`main`**.
 3. **Impostazioni build**
 
 | Campo | Valore |

@@ -64,7 +64,7 @@ export const site = {
         id: "contatti",
         title: "Contatti",
         body: "",
-        email: "hello@kyne.it",
+        email: "hi@kyne.it",
       },
     ],
   },

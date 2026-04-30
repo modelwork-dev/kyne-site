@@ -42,6 +42,7 @@ Output in `dist/` (adatto a Cloudflare Pages, Netlify, S3+CDN, ecc.).
 5. **Variabili** — Sito statico: nessuna `VITE_*` obbligatoria.
 6. **Dominio** — **Custom domains**: aggiungi `kyne.it` e/o `www.kyne.it`. Il canonical nel codice è **`https://kyne.it`** ([`src/content/site.ts`](src/content/site.ts), sitemap, robots). Per **www → apex**: il file `public/_redirects` di Pages **non** supporta redirect tra hostname diversi; usa **Cloudflare** → **Rules** → **Redirect Rules** (o **Bulk Redirects**), es. da `https://www.kyne.it/*` a `https://kyne.it/:splat` con **301**.
 7. **Dopo il primo deploy** — Verifica `*.pages.dev`, poi il dominio reale; controlla HTTPS, `/sitemap.xml`, redirect www.
+8. **Deploy aggiornato** — Dopo un `git push` su `main`, attendi il deploy automatico. **Non** usare «Riprova deploy» su una build vecchia: ricompila **quel commit** (vedi nel log `HEAD is now at …`). Per forzare una nuova build dall’ultimo commit: **Deployments** → **Create deployment** (o un nuovo push).
 
 ## Archivio da distribuire (senza `node_modules`)
 

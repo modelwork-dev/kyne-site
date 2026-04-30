@@ -1,0 +1,11 @@
+/*
+  CSP minimale per sito statico senza script di terze parti (aggiungi domini se integri GA, reCAPTCHA, ecc.).
+  Cache: rivalidazione documenti; adatta in produzione se servono header più stretti come nel progetto ZenBake.
+*/
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'
+*/

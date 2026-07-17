@@ -5,11 +5,11 @@ import { site } from "../content/site";
 export default function Navbar() {
   return (
     <header className="border-b border-surface-200 bg-white/90 backdrop-blur">
-      <div className="mx-auto flex max-w-4xl items-center justify-between gap-6 px-5 py-4">
+      <div className="mx-auto flex max-w-4xl items-center justify-between gap-3 px-5 py-4 sm:gap-6">
         <NavLink
           to="/"
           aria-label={`${headerLogo.alt}, vai alla home`}
-          className="flex shrink-0 items-center"
+          className="flex min-w-0 flex-1 items-center"
         >
           <img
             src={headerLogo.src}
@@ -19,7 +19,7 @@ export default function Navbar() {
             aria-hidden
           />
         </NavLink>
-        <nav className="flex items-center gap-4 text-sm font-medium">
+        <nav className="flex shrink-0 items-center gap-3 text-sm font-medium sm:gap-4">
           {site.nav.map((item) => (
             <NavLink
               key={item.to}

@@ -6,7 +6,7 @@ export default function Footer() {
   const { productAttribution, legalLine } = site.footer;
 
   return (
-    <footer className="border-t border-surface-200 bg-surface-50">
+    <footer className="border-t border-sky-100 bg-gradient-to-b from-surface-50 to-blue-50/60">
       <div className="mx-auto flex max-w-4xl flex-col gap-4 px-5 py-8 text-sm text-surface-600 sm:flex-row sm:items-start sm:justify-between">
         <div className="space-y-2">
           <p>{note}</p>

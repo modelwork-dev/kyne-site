@@ -4,7 +4,7 @@ import { site } from "../content/site";
 
 export default function Navbar() {
   return (
-    <header className="border-b border-surface-200 bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-sky-100/80 bg-white/80 shadow-[0_8px_30px_-24px_rgba(15,23,42,0.5)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-4xl items-center justify-between gap-3 px-5 py-4 sm:gap-6">
         <NavLink
           to="/"
